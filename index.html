@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Главная</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    
+</head>
+<body>
+    <div class="head">
+        <div class="none"><!--Пустой див для красоты--></div>
+        <div><button onclick="location.href='index.html'" class="bt butt_main"><img class="logo" src="logo.png"></button></div>
+        <div class="head_button">
+            <button onclick="location.href='index2.html'" class="bt butt_login"><img class="login" src="login.png"></button>
+        </div>
+    </div>
+
+    <!--КАРТОЧКИ-->
+    <div class="cards">
+        <p class="content1">Наши мероприятия</p>
+        <div class="all_cards">
+            <div class="card">
+                <p class="content">Лекция Ермакова (рассидка)</p>
+                <p class="description">Планомерные страдания в перемешку с отборным (с помойки) юмором. Любите летучки? Вам Это понравится!</p>
+                
+                <div id="panel_more1">
+                    <div class="div_butt_more"><button onclick="(document.getElementById('more1').style.display='block')" class="bt butt_more">Подробнее</button></div>
+                    <div id="more1">
+                    
+                        <div class="answers">
+                            <p class="description" >Выберите дату</p>
+                            <input type="date" id="data1" min="2022-12-25" max="2023-01-25" >
+                        
+                            <ul class="showcase1">
+                                <li>
+                                  <div class="seat1"></div>
+                                  <small>Свободно</small>
+                                </li>
+                                <li>
+                                  <div class="seat1 selected1"></div>
+                                  <small>Выбрано</small>
+                                </li>
+                                <li>
+                                  <div class="seat1 occupied1"></div>
+                                  <small>Занято</small>
+                                </li>
+                              </ul>
+                              <div class="container1">
+                                <div class="screen"></div>
+                                <div class="row1">
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A1</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A2</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A3</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A4</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A5</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A6</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A7</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A8</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1"> A9</div>
+                            
+                                </div>
+                                <div class="row1">
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B1</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B2</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B3</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B4</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B5</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B6</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B7</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B8</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">B9</div>
+                            
+                                </div>
+                                <div class="row1">
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C1</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C2</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C3</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C4</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C5</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C6</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C7</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C8</div>
+                                  <div class="col col-lg-1 place1 mx-auto unbooked seat1">C9</div>
+                                </div>
+
+                                <div class="row1">
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D1</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D2</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D3</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D4</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D5</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D6</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D7</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D8</div>
+                                    <div class="col col-lg-1 place1 mx-auto unbooked seat1">D9</div>
+                                  </div>
+                            
+                              </div>
+                              <p class="text">Вы выбрали <span id="count1">0</span> 
+                              </p>
+                              
+
+                            
+                        </div>
+                        <div class="container1 order1 d-grid gap-2 mx-auto">
+                            <input class="btn btn-secondary1 mx-auto" type="button" value="Забронировать места"  id="submit1">
+                          </div>
+                          <p id="alert_mess1"></p>
+
+                            
+                        </div>
+                    
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <p class="content">Групповые рыдания (стоячие места)</p>
+                <p class="description">Открылся групповой курс по успокаению нервов для студентов и преподавателей, просим не шуметь, студенты наплакались и спят.</p>
+                
+
+                <div id="panel_more2">
+                    <div class="div_butt_more"><button onclick="(document.getElementById('more2').style.display='block')" class="bt butt_more">Подробнее</button></div>
+                    <div id="more2">
+                    
+                        <div class="answers">
+                            <p class="description">Выберите дату</p>
+                            <input type="date" id="data2" min="2022-12-25" max="2023-01-25" >
+                        
+                            <p class="description">Сколько человек пойдет</p>
+                            <input type="number" id="numberOfPlaces" min="1" max="30" placeholder="1" value="1">
+
+                            <button class="bt butt_more2" id="submit2">Забронировать места</button>
+                            <p id="alert_mess2"></p>
+                        </div>
+                    
+                        
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <p class="content">Общие SPAльни "У Лёхи" (смешанное)</p>
+                <p class="description">Ну что сказать, жаль Лёху. В случаях массового засора мероприятие перемещается к Вике...</p>
+                
+
+                <div id="panel_more3">
+                    <div class="div_butt_more"><button onclick="(document.getElementById('more3').style.display='block')" class="bt butt_more">Подробнее</button></div>
+                    <div id="more3">
+                    
+                        <div class="answers">
+                            <p class="description">Ближайшая дата: 10.01.23</p>
+                            <p class="description">Выбрать стоячие места: </p>
+                            <input type="number" id="numberOfPlaces2" min="1" max="20" placeholder="1" value="0">
+                            <p class="description">Выбрать сидячие места: </p>
+                            <ul class="showcase">
+                                <li>
+                                  <div class="seat"></div>
+                                  <small>Свободно</small>
+                                </li>
+                                <li>
+                                  <div class="seat selected"></div>
+                                  <small>Выбрано</small>
+                                </li>
+                                <li>
+                                  <div class="seat occupied"></div>
+                                  <small>Занято</small>
+                                </li>
+                              </ul>
+                              <div class="container">
+                                <div class="screen"></div>
+                                <div class="row">
+                                  <div class="col col-lg-1 place mx-auto unbooked seat"> A1</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat"> A2</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat"> A3</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat"> A4</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat"> A5</div>
+                            
+                                </div>
+                                <div class="row">
+                                  <div class="col col-lg-1 place mx-auto unbooked seat">B1</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat">B2</div>
+                                  <div class="col col-lg-1 place mx-auto taken occupied seat">B3</div>
+                                  <div class="col col-lg-1 place mx-auto taken occupied seat">B4</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat">B5</div>
+                            
+                                </div>
+                                <div class="row">
+                                  <div class="col col-lg-1 place mx-auto unbooked seat">C1</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat">C2</div>
+                                  <div class="col col-lg-1 place mx-auto taken occupied seat">C3</div>
+                                  <div class="col col-lg-1 place mx-auto taken occupied seat">C4</div>
+                                  <div class="col col-lg-1 place mx-auto unbooked seat">C5</div>
+                                </div>
+                            
+                              </div>
+                              <p class="text">Вы выбрали <span id="count">0</span> 
+                              </p>
+                              
+
+                            
+                        </div>
+                        <div class="container order d-grid gap-2 mx-auto">
+                            <input class="btn btn-secondary mx-auto" type="button" value="Забронировать места" id="submit3">
+                          </div>
+                          <p id="alert_mess"></p>
+                    
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--ПОДВАЛ-->
+    <div class="footer">
+        <p class="text_foot">Спасибо, что посетили наш сайт!!!</p>
+        <p class="text_foot">Его делали студенты группы б2ИФСТ41 Сухарева Виктория и Щинников Владимир</p>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="Q7.js"></script>
+  <script src="Q8.js"></script>
+  <script src="main.js"></script>
+    
+</body>
+</html>
